@@ -1,0 +1,82 @@
+\section{Complete Solution of $Ax=b$}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        $t$ & Value \\
+        \hline
+        $t_1$ & $\frac{\pi}{6}s$ \\
+        $t_2$ & $\frac{\pi}{3}s$ \\
+        $t_3$ & $\frac{5\pi}{6}s$ \\
+        \hline
+    \end{tabular}
+    \caption{Time Values}
+\end{table}
+
+\[Ax=b\]
+
+\[
+    A = \begin{bmatrix}
+        0.707 & 0 & 1 & 0.707 & 0 \\
+        0 & 4.905 & 9.81 & -1 & 4.905 \\
+        1 & 0 & 4.509 & 0 & 0 \\
+    \end{bmatrix}
+%
+    x = \begin{bmatrix}
+        x_1 \\
+        x_2 \\
+        x_3 \\
+        x_4 \\
+        x_5
+    \end{bmatrix}
+%
+    b = \begin{bmatrix}
+        1 \\
+        3 \\
+        0
+    \end{bmatrix}
+\]
+
+\[
+    \begin{bmatrix}
+        0.707 & 0 & 1 & 0.707 & 0 \\
+        0 & 4.905 & 9.81 & -1 & 4.905 \\
+        1 & 0 & 4.509 & 0 & 0 \\
+    \end{bmatrix}
+%
+    \begin{bmatrix}
+        x_1 \\
+        x_2 \\
+        x_3 \\
+        x_4 \\
+        x_5
+    \end{bmatrix}
+%
+    \begin{bmatrix}
+        1 \\
+        3 \\
+        0
+    \end{bmatrix}
+\]
+
+\[
+    x = \begin{bmatrix}
+        2.060 - 1.497 \times x_4 \\
+        1.525 - 0.442 \times x_4 - x_5 \\
+        -0.457 + 0.323 \times x_4 \\
+        x_4 \\
+        x_5
+    \end{bmatrix}
+\]
+
+As $x_4$ and $x_5$ are free variables, we can set them to any value we want. Let's set them to 0.
+
+\[
+    x = \begin{bmatrix}
+        2.060 \\
+        1.525 \\
+        -0.457 \\
+        0 \\
+        0
+    \end{bmatrix}
+\]

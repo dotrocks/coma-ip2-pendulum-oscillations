@@ -1,0 +1,96 @@
+\section{Inspecting Energy Change of the Pendulum}
+
+\subsection{Deriving Energy Equations}
+
+Here, we have a bob of mass $m$ attached to a massless string suspended from a fixed pivot point. The string, at its equilibrium position, makes an angle $\theta$ with the vertical.
+
+\newpage
+\thispagestyle{plain}
+
+\subsubsection{Kinetic Energy $K(t)$}
+
+When the pendulum swings, the bob gains kinetic energy due to its motion. The kinetic energy formula tells us: 
+	\[K(t) = \frac{1}{2} \times mv^{2}(t)\] 
+where:
+\begin{itemize}
+	\item $m$ is the bob's mass.
+	\item $v(t)$ is the bob's instantaneous velocity at time $t$.
+\end{itemize}
+
+\noindent To find $v(t)$, we can relate it to the angular velocity $\omega (t)$ using the relationship: 
+	\[v(t) = L \times \omega (t)\] 
+Here, $L$ is the pendulum's length. Substituting this expression for $v(t)$ in the kinetic energy equation, we get: 
+	\[K(t) = \frac{1}{2} \times m \times L^{2} \times \omega^{2}(t)\]
+
+\subsubsection{Potential Energy $U(t)$}
+
+The bob also possesses potential energy due to its height above the equilibrium position. The potential energy formula for gravitational potential energy states: 
+	\[U(t) = mgh(t)\] 
+where:
+\begin{itemize}
+	\item $g$ is the acceleration due to gravity.
+	\item $h(t)$ is the bob's height above the equilibrium position at time $t$.
+\end{itemize}
+
+\noindent In the case of a pendulum, the height can be expressed as: 
+	\[h(t) = L - L \times \cos(\theta (t))\] 
+\noindent Substituting this into the potential energy equation, we obtain: 
+	\[U(t) = mgL(1 - \cos(\theta (t)))\]
+
+\subsubsection{Mechanical Energy $E(t)$}
+
+The mechanical energy of the pendulum is the sum of its kinetic and potential energies at any given time $t$: 
+	\[E(t) = K(t) + U(t)\] 
+\noindent Substituting the previously derived expressions for $K(t)$ and $U(t)$, we arrive at the final equation for the mechanical energy of the pendulum: 
+	\[E(t) = \frac{1}{2} \times m \times L^{2} \times \omega^{2}(t) + mgL(1 - \cos(\theta (t)))\] 
+\noindent This equation combines the pendulum's kinetic and potential energies, providing a complete understanding of its total energy at any point in its oscillation.
+
+\newpage
+\thispagestyle{plain}
+
+\subsection{Inspecting the Conservation of Energy}
+
+\hl{In the ideal model of a simple pendulum}, mechanical energy is conserved. This means that the sum of the pendulum's kinetic and potential energies remains constant throughout its oscillation. To understand why, let's delve deeper.
+
+\subsubsection{Understanding Conservation}
+
+Imagine the pendulum swinging back and forth. As it rises, its kinetic energy decreases because its speed slows down. However, its potential energy increases due to its increasing height above the equilibrium position. Conversely, during its descent, the pendulum's kinetic energy increases, while its potential energy decreases.
+
+Crucially, these changes balance each other out perfectly \hl{in an ideal, frictionless system}. The energy lost in one form is entirely gained in the other, resulting in a constant total mechanical energy (E) throughout the oscillation.
+
+\bigskip
+
+\noindent Mathematically, this can be expressed as:
+\[E(t) = K(t) + U(t) = constant\]
+where:
+\begin{itemize}
+	\item $E(t)$ is the total mechanical energy at time $t$.
+	\item $K(t)$ is the kinetic energy at time $t$.
+	\item $U(t)$ is the potential energy at time $t$.
+\end{itemize}
+
+\subsubsection{Visualizing Conservation}
+
+To visualize this principle, imagine the mechanical energy as a closed container filled with liquid. As the pendulum swings, the liquid might shift within the container, representing the transfer between kinetic and potential energy. However, the total amount of liquid (total mechanical energy) remains constant.
+
+\newpage
+\thispagestyle{plain}
+
+\subsubsection{Implications and Limitations}
+
+The conservation of mechanical energy has important implications for analysing pendulum motion. It allows us to:
+
+\begin{itemize}
+	\item Predict the pendulum's velocity and height at any point in its oscillation based on its initial energy.
+	\item Explain why the period of oscillation remains constant for a given pendulum length and gravity.
+\end{itemize}
+
+However, it's important to remember that this applies to an idealized model. In real-world scenarios, factors like:
+
+\begin{itemize}
+	\item Friction at the pivot point and air resistance dissipate energy, causing the mechanical energy to gradually decrease over time.
+	\item String mass contributes additional kinetic and potential energy, slightly modifying the conservation equation.
+	\item Large angular displacements deviate from the small-angle approximations used in our calculations, requiring higher-order terms for accurate energy analysis.
+\end{itemize}
+
+Therefore, while the principle of mechanical energy conservation provides a valuable framework for understanding pendulum motion, it's essential to consider these limitations for real-world applications and more precise calculations.

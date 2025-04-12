@@ -1,0 +1,36 @@
+\section{Path and Sector Functions}
+
+Based on the geometrical set-up of the pendulum and the maximum deviation angle ($\theta_{\max}$), we can derive the expressions for the path $s(t)$ along the arc and the sector area $A(t)$ swept by the pendulum during a single period ($0$ to $T$).
+
+\newpage
+\thispagestyle{plain}
+
+\subsection{Path Function}
+
+The path $s(t)$ travelled by the bob along the arc can be calculated using the formula: 
+	\[s(t) = L \times \theta (t)\] 
+where:
+
+\begin{itemize}
+	\item $L$ is the radius of the arc, with being the pendulum length.
+	\item $\theta (t)$ is the angle of deviation from vertical position at time $t$, as given in our theoretical analysis (e.g., $B\cos(\omega t)$).
+\end{itemize}
+
+This equation essentially maps the angular displacement to the linear distance travelled along the arc.
+
+\subsection{Sector Area Function}
+
+The sector area $A(t)$ swept by the pendulum during a specific time $t$ can be expressed as: 
+	\[A(t) = \frac{1}{2} \times L^{2} \times [\theta (t) - \sin(\theta (t))]\] 
+Here, the term $L^{2}$ accounts for the area of the whole circle with radius $L$, and the difference $[\theta (t) - \sin(\theta (t))]$ represents the fraction of the circle covered by the sector at time $t$.
+
+\subsection{Example Calculation}
+
+Suppose we have a pendulum with $L = 1m$ and $\theta_{\max} = 30^{\circ}$ ($\frac{\pi}{6}rad$). If the angle function is given by $\theta (t) = 0.5\cos(\frac{\pi}{3}t)$, then we can calculate the path and sector area at $t = 1$ second:
+
+\begin{itemize}
+	\item $s(1) = L \times \theta (1) = 1 \times 0.5\cos(\frac{\pi}{3}) \approx 0.25m$
+	\item $A(1) = \frac{1}{2} \times L^{2} \times [\theta (1) - \sin(\theta (1))] \approx \frac{1}{2} \times 1 \times [0.5 - \sin(\frac{\pi}{3})] \approx 0.1830m^{2}$
+\end{itemize}
+
+\noindent These values represent the distance travelled along the arc and the area swept by the pendulum within the first second of oscillation.
